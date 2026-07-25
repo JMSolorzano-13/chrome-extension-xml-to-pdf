@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor CFDI a PDF</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <!--
+    @sdd-task: Task #1 - Icons from logo.svg + popup brand
+    @sdd-spec: specs/spec-006-l6n-setup-deploy-features/spec.md
+    @sdd-decision: ADR-011 - Public deploy kit — logo icons, allowlist ZIP
+    @sdd-why: Store/toolbar brand mark in header without breaking 400px popup
+  -->
+  <div id="app">
+    <header class="app-header">
+      <div class="app-brand">
+        <img class="app-logo" src="icons/32.png" width="32" height="32" alt="CFDI XML to PDF">
+        <h1 class="app-title">CFDI a PDF</h1>
+      </div>
+      <span class="app-badge">Local MV3</span>
+    </header>
+    <main class="app-content">
+      <section class="drop-zone" id="dropZone">
+        <p class="drop-text">Selecciona una carpeta con facturas XML</p>
+        <button id="btnSelectFolder" class="btn-primary" type="button">Seleccionar Carpeta</button>
+      </section>
+
+      <div id="statusContainer" class="status-container hidden">
+        <p id="statusMessage">Esperando interacción...</p>
+        <div id="progressSection" class="progress-section hidden">
+          <label id="progressLabel" class="progress-label" for="progressBar">0 de 0</label>
+          <progress id="progressBar" class="progress-bar" max="1" value="0"></progress>
+        </div>
+        <div id="summaryBox" class="summary-box hidden"></div>
+        <ul id="errorLog" class="error-log hidden"></ul>
+      </div>
+    </main>
+  </div>
+
+  <!-- UMD locals first (globals), then ES module entry -->
+  <script src="libs/pdfmake.min.js"></script>
+  <script src="libs/vfs_fonts.js"></script>
+  <script src="libs/qrcode.min.js"></script>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

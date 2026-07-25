@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="100%" height="100%">
+  <!-- Background -->
+  <rect width="580" height="580" x="10" y="10" rx="60" fill="#ffffff" stroke="#f0f0f0" stroke-width="2"/>
+
+  <!-- XML Document -->
+  <g id="xml-doc">
+    <!-- Base Document -->
+    <path d="M70,180 C70,170 78,162 88,162 L195,162 L260,227 L260,442 C260,452 252,460 242,460 L88,460 C78,460 70,452 70,442 Z" fill="#2175c5"/>
+    <!-- Folded Corner -->
+    <path d="M195,162 L195,227 L260,227 Z" fill="#19589d"/>
+    <!-- Front Pill -->
+    <rect x="50" y="270" width="230" height="70" rx="15" fill="#1b63a6"/>
+    <!-- XML Text -->
+    <text x="165" y="320" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="800" font-size="44" fill="white" text-anchor="middle">&lt;XML&gt;</text>
+  </g>
+
+  <!-- Green Arrow -->
+  <path d="M 285 285 L 325 285 L 325 250 L 385 305 L 325 360 L 325 325 L 285 325 Z" fill="#4b9b47" stroke="#4b9b47" stroke-linejoin="round" stroke-width="4"/>
+
+  <!-- PDF Document -->
+  <g id="pdf-doc">
+    <!-- Base Document -->
+    <path d="M400,172 L485,172 L550,237 L550,442 C550,452 542,460 532,460 L418,460 C408,460 400,452 400,442 Z" fill="#971b32"/>
+    <!-- Folded Corner -->
+    <path d="M485,172 L485,237 L550,237 Z" fill="#681324"/>
+    <!-- Inner Document Outline -->
+    <g stroke="white" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" fill="none">
+      <path d="M 440 290 L 485 290 L 515 320 L 515 405 C 515 410 510 415 505 415 L 450 415 C 445 415 440 410 440 405 Z"/>
+      <path d="M 485 290 L 485 320 L 515 320"/>
+      <line x1="460" y1="350" x2="495" y2="350"/>
+      <line x1="460" y1="370" x2="480" y2="370"/>
+      <line x1="460" y1="390" x2="495" y2="390"/>
+    </g>
+    <!-- Front Pill -->
+    <rect x="340" y="200" width="150" height="60" rx="12" fill="#701426"/>
+    <!-- PDF Text -->
+    <text x="415" y="244" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-weight="800" font-size="40" fill="white" text-anchor="middle">PDF</text>
+  </g>
+</svg>

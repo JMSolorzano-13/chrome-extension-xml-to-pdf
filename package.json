@@ -1,0 +1,36 @@
+{
+  "name": "chrome-extension-xml-to-pdf",
+  "version": "1.0.0",
+  "description": "Convert Mexican CFDI XML invoices to PDF entirely on your device. No uploads.",
+  "main": "popup.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "node tests/test-parser.js && node tests/test-pdf-generator.js && node tests/test-batch-runner.js && node tests/test-deploy-kit.js",
+    "icons": "bash scripts/generate-icons.sh",
+    "package": "bash scripts/package-extension.sh"
+  },
+  "keywords": [
+    "chrome-extension",
+    "cfdi",
+    "xml",
+    "pdf",
+    "mexico",
+    "sat"
+  ],
+  "author": "Juan M. Solórzano I. <https://github.com/JMSolorzano-13>",
+  "license": "MIT",
+  "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JMSolorzano-13/chrome-extension-xml-to-pdf.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JMSolorzano-13/chrome-extension-xml-to-pdf/issues"
+  },
+  "homepage": "https://github.com/JMSolorzano-13/chrome-extension-xml-to-pdf#readme",
+  "devDependencies": {
+    "@xmldom/xmldom": "^0.9.10"
+  }
+}

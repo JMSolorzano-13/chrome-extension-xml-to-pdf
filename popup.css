@@ -1,0 +1,173 @@
+/**
+ * @sdd-task: Task #1 - Icons from logo.svg + popup brand
+ * @sdd-spec: specs/spec-006-l6n-setup-deploy-features/spec.md
+ * @sdd-decision: ADR-011 - Public deploy kit — logo icons, allowlist ZIP
+ * @sdd-why: Brand row + existing Spec-004 progress/summary styles (~400px)
+ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 400px;
+  min-height: 300px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 16px;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 12px;
+  gap: 8px;
+}
+
+.app-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.app-logo {
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  display: block;
+}
+
+.app-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #1e293b;
+  white-space: nowrap;
+}
+
+.app-badge {
+  background-color: #e0f2fe;
+  color: #0369a1;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 9999px;
+}
+
+.app-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.drop-zone {
+  border: 2px dashed #cbd5e1;
+  border-radius: 8px;
+  padding: 24px 16px;
+  text-align: center;
+  background-color: #ffffff;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.drop-text {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin-bottom: 12px;
+}
+
+.btn-primary {
+  background-color: #2563eb;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #1d4ed8;
+}
+
+.btn-primary:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.status-container {
+  padding: 12px;
+  border-radius: 6px;
+  background-color: #f1f5f9;
+  font-size: 0.8125rem;
+  color: #475569;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.progress-section {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.progress-label {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 10px;
+  accent-color: #2563eb;
+}
+
+.summary-box {
+  padding: 8px 10px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  font-size: 0.8125rem;
+  color: #1e293b;
+  line-height: 1.4;
+}
+
+.error-log {
+  list-style: none;
+  max-height: 140px;
+  overflow-y: auto;
+  padding: 8px 10px;
+  border-radius: 6px;
+  background-color: #fff1f2;
+  border: 1px solid #fecdd3;
+  font-size: 0.75rem;
+  color: #9f1239;
+}
+
+.error-log li {
+  padding: 4px 0;
+  border-bottom: 1px solid #fecdd3;
+  word-break: break-word;
+}
+
+.error-log li:last-child {
+  border-bottom: none;
+}
+
+.hidden {
+  display: none !important;
+}

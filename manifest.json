@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "CFDI XML to PDF (Local)",
+  "version": "1.0.0",
+  "description": "Convert Mexican CFDI XML invoices to PDF entirely on your device. No uploads.",
+  "icons": {
+    "16": "icons/16.png",
+    "48": "icons/48.png",
+    "128": "icons/128.png"
+  },
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/16.png",
+      "48": "icons/48.png"
+    },
+    "default_title": "CFDI XML to PDF (Local)"
+  },
+  "permissions": [
+    "storage"
+  ]
+}

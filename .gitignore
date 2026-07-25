@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# SDD process memory (local only — ADR-011)
+.sdd-skill/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Build artifacts
+dist/
+*.zip
+
+# Env / secrets
+.env
+.env.*
+*.pem
+
+# Local planning notes (not part of public product surface)
+general_idea.md
+implementation_plan_chrome_extension_xml_to_pdf.md
